@@ -2,9 +2,9 @@ import React from 'react'
 
 const List = ({data,index}) => {
   return (
-    <div>
-        {data.slice(index-5,index).map(({id,name,image,age,email})=>(
-            <div key={id} className='card'>
+    <div style={{display:'flex'}}>
+        {data.slice(index,index+5).map(({id,name,image,age,email})=>(
+            <div key={id} className='card'style={{display:"flex"}}>
                 <img src={image} alt="" />
               <div className='info'>
               <h3>{name}</h3>
