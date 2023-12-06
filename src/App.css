@@ -18,11 +18,12 @@ article{
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    min-width: 250px;
 }
 .card{
     background-color: #f1e1e1;
     width: 25%;
-    min-width: 220px;
+    min-width: 250px;
     display: flex;
     flex-wrap: wrap;
     gap: .5rem;
