@@ -1,6 +1,7 @@
 import List from "./components/List"
 import { useState } from "react";
 import data from "./helper/data";
+import "./App.css";
 
 function App() {
   const[index,setIndex]= useState(0)
@@ -25,8 +26,10 @@ function App() {
   return (
     <main>
       <section className="container">
-        <h3>{index+1} to {index+5}</h3>
-        <h2>Employee List</h2>
+      <article>
+      <h2>Employee List</h2>
+      <h3>-{index+1} to {index+5}-</h3>
+      </article>
       <List data={data} index={index}/>
       <div className="buttons">
         <button onClick={prevFive}>Previous</button>
